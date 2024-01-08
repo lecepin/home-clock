@@ -32,6 +32,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="进入" />
+
+        <EditText
+            android:id="@+id/startTimeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="开始时间 (HH:mm)"
+            android:inputType="time" />
+
+        <EditText
+            android:id="@+id/endTimeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="结束时间 (HH:mm)"
+            android:inputType="time" />
+
+        <CheckBox
+            android:id="@+id/enableCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启区间降温" />
     </LinearLayout>
 
     <WebView
@@ -39,4 +59,5 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone" />
+
 </FrameLayout>
